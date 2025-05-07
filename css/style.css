@@ -1,0 +1,148 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Base */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px 0;
+}
+
+/* Header */
+header {
+  background: #111;
+  color: white;
+  padding: 20px 0;
+}
+
+header h1 {
+  margin-bottom: 10px;
+}
+
+nav ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Sobre a loja */
+#sobre {
+  background: white;
+  padding: 50px 0;
+}
+
+.sobre-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.sobre-content .imagem img {
+  max-width: 100%;
+  border-radius: 10px;
+  width: 500px;
+}
+
+.sobre-content .texto {
+  flex: 1;
+}
+
+/* Produtos */
+#produtos {
+  background: #fafafa;
+  padding: 50px 0;
+}
+
+.produtos-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+.produto-card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.produto-card img {
+  max-width: 100%;
+  border-radius: 5px;
+  height: 180px;
+  object-fit: cover;
+}
+
+.produto-card h3 {
+  margin: 15px 0 10px;
+}
+
+.produto-card p {
+  font-size: 14px;
+  color: #666;
+}
+
+.produto-card button {
+  margin-top: 10px;
+  padding: 10px 15px;
+  border: none;
+  background: #111;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.produto-card button:hover {
+  background: #333;
+}
+
+/* Footer */
+footer {
+  background: #111;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Responsivo */
+@media (max-width: 1024px) {
+  .produtos-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .sobre-content {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .produtos-grid {
+    grid-template-columns: 1fr;
+  }
+
+  nav ul {
+    flex-direction: column;
+  }
+
+  nav li {
+    margin-bottom: 10px;
+  }
+}
