@@ -1,0 +1,86 @@
+:root {
+    --font-roboto: "Roboto", "Roboto Fallback";
+
+    /* Cores personalizadas */
+    --cor-txt-principal: white;
+    --cor-txt-secundaria: white;
+    --cor-aviso-1: white;
+    --color-bg-highlight: #424242;
+    --color-bg-intel: #0071c5;
+    --color-bg-amd: #f26522;
+    --color-bg-nvidia: #76b900;
+    --color-bg-radeon: #ed1b24;
+
+    /* Spacing e sombra */
+    --mui-spacing: 8px;
+    --mui-shape-borderRadius: 4px;
+
+    /* Tipografia */
+    --mui-font-h1: 300 6rem / 1.167 var(--font-roboto);
+    --mui-font-h2: 300 3.75rem / 1.2 var(--font-roboto);
+    --mui-font-h3: 400 3rem / 1.167 var(--font-roboto);
+    --mui-font-h4: 400 2.125rem / 1.235 var(--font-roboto);
+    --mui-font-h5: 400 1.5rem / 1.334 var(--font-roboto);
+    --mui-font-h6: 500 1.25rem / 1.6 var(--font-roboto);
+    --mui-font-subtitle1: 400 1rem / 1.75 var(--font-roboto);
+    --mui-font-subtitle2: 500 0.875rem / 1.57 var(--font-roboto);
+    --mui-font-body1: 400 1rem / 1.5 var(--font-roboto);
+    --mui-font-body2: 400 0.875rem / 1.43 var(--font-roboto);
+    --mui-font-button: 500 0.875rem / 1.75 var(--font-roboto);
+    --mui-font-caption: 400 0.75rem / 1.66 var(--font-roboto);
+    --mui-font-overline: 400 0.75rem / 2.66 var(--font-roboto);
+    --mui-font-inherit: inherit inherit / inherit inherit;
+}
+
+body {
+    overflow-y: auto !important;
+    margin: 0;
+    color: var(--mui-palette-text-primary);
+    font-family: var(--font-roboto);
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.5;
+    background-color: var(--mui-palette-background-default);
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    box-sizing: border-box;
+    -webkit-text-size-adjust: 100%;
+}
+
+/* Tema Escuro */
+.dark {
+    -webkit-print-color-scheme: dark;
+    color-scheme: dark;
+
+    --mui-palette-common-black: #000;
+    --mui-palette-common-white: #fff;
+    --mui-palette-common-background: #000;
+    --mui-palette-common-onBackground: #fff;
+    --mui-palette-primary-main: #e90313;
+    --mui-palette-secondary-main: #009e2a;
+    --mui-palette-error-main: #f44336;
+    --mui-palette-warning-main: #ffa726;
+    --mui-palette-info-main: #0063cc;
+    --mui-palette-success-main: #66bb6a;
+}
+
+/* Tema Claro */
+.light {
+    --mui-palette-common-black: #000;
+    --mui-palette-common-white: #fff;
+    --mui-palette-common-background: #fff;
+    --mui-palette-common-onBackground: #000;
+    --mui-palette-primary-main: #e90313;
+    --mui-palette-secondary-main: #009e2a;
+    --mui-palette-error-main: #d32f2f;
+    --mui-palette-warning-main: #ed6c02;
+    --mui-palette-info-main: #0063cc;
+    --mui-palette-success-main: #2e7d32;
+}
